@@ -22,14 +22,17 @@ let adventurous = false;
 let food = 'pickles';
 console.log('My favorite food is ' + food + '!');
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
-let pets = 4;
+let pets = 2;
+console.log('I have ' + pets + ' pets.');
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = 4;
+let friendsPets = 2;
+console.log('My friend has ' + friendsPets + ' pets.');
 // 11 - Add two pets to your `pets` variable
 pets += 2;
 console.log('pets +2:', pets);
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
-const allowedPets = 4;
+const allowedPets = 2;
+console.log('In my building I can only have ' + allowedPets + ' pets.');
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
 // if it's not true, console log "How about we stay home?"
 if (adventurous == true) {
@@ -73,7 +76,7 @@ if (pets > friendsPets) {
   console.log('16. My friend and I both have ' + mostPets + ' pets.');
 }
 console.log('mostPets:', mostPets);   // I added the questions numbers to these
-// two because they're the same output
+// last three because they're the same output
 
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
