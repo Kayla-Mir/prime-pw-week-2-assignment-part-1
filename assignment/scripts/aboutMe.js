@@ -1,13 +1,15 @@
 // REQUIRED FEATURES:
 // 1 - Create a variable called `firstName` and assign it the value of your first name
 let firstName = 'Kayla';
+console.log('Hello! My name is ' + firstName + '.');
 // 2 - Create a second variable called `lastName` and assign it the value of your last name
 let lastName = 'Mir';
+console.log('My last name is ' + lastName + '.');
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
 // (remember, you already have variables for this, can you use those?)
 let fullName = 'Kayla' + ' Mir';
 // 4 - Console log the value of `fullName`
-console.log(fullName);
+console.log('My full name is ' + fullName + '.');
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 let luckyNumber = 7;
 // 6 - Console log this sentence, adding in the variables you created above:
@@ -17,7 +19,8 @@ console.log('My name is ' + fullName + ', and I think ' + luckyNumber + ' is a w
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 let adventurous = false;
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
-let food = 'My favorite food is pickles.';
+let food = 'pickles';
+console.log('My favorite food is ' + food + '!');
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
 let pets = 4;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
@@ -61,24 +64,32 @@ if (pets < allowedPets) {
 let mostPets;
 if (pets > friendsPets) {
   mostPets = pets;
-} if (pets < friendsPets) {
+  console.log('16. I have the most pets with ' + mostPets + ' pets.');
+} else if (pets < friendsPets) {
   mostPets = friendsPets;
+  console.log('16. My friend has the most pets with ' + mostPets + ' pets.');
 } else {
   mostPets = pets;
+  console.log('16. My friend and I both have ' + mostPets + ' pets.');
 }
-console.log('mostPets:', mostPets);
+console.log('mostPets:', mostPets);   // I added the questions numbers to these
+// two because they're the same output
+
+
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 switch (true) {
   case (pets > friendsPets):
     mostPets = pets
-    console.log('I have the most pets with ' + mostPets + ' pets.');
+    console.log('17. I have the most pets with ' + mostPets + ' pets.');
     break;
   case (pets < friendsPets):
     mostPets = friendsPets
-    console.log('My friend has the most pets with ' + mostPets + ' pets.');
+    console.log('17. My friend has the most pets with ' + mostPets + ' pets.');
     break;
   case (pets = friendsPets):
     mostPets = pets
-    console.log('My friend and I both have ' + mostPets + ' pets.');
+    console.log('17. My friend and I both have ' + mostPets + ' pets.');
 }
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
+let adventure = (adventurous) ? '18. Adventures are great!' : '18. How about we stay home?'
+console.log(adventure);
