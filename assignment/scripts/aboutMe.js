@@ -35,14 +35,14 @@ const allowedPets = 2;
 console.log('In my building I can only have ' + allowedPets + ' pets.');
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
 // if it's not true, console log "How about we stay home?"
-if (adventurous == true) {
+if (adventurous === true) {
   console.log('Adventures are great!');
 } else {
   console.log('How about we stay home?');
 }
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
-if (luckyNumber == 2 && adventurous == true) {
+if (luckyNumber === 2 && adventurous === true) {
   console.log('Roll the dice!');
 }
 // 15 - Write a conditional that console logs "I can have more pets!"
@@ -52,7 +52,7 @@ if (luckyNumber == 2 && adventurous == true) {
 // if the value of `pets` is greater than the value of `allowedPets`.
 if (pets < allowedPets) {
   console.log('I can have more pets!');
-} else if (pets == allowedPets) {
+} else if (pets === allowedPets) {
   console.log('I have enough pets.');
 } else {
   console.log('Oh no, I have too many pets.');
@@ -76,7 +76,7 @@ if (pets > friendsPets) {
   console.log('16. My friend and I both have ' + mostPets + ' pets.');
 }
 console.log('mostPets:', mostPets);   // I added the questions numbers to these
-// last three because they're the same output
+// last three questions to keep track of them easier
 
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
@@ -89,7 +89,7 @@ switch (true) {
     mostPets = friendsPets
     console.log('17. My friend has the most pets with ' + mostPets + ' pets.');
     break;
-  case (pets = friendsPets):
+  case (pets === friendsPets):
     mostPets = pets
     console.log('17. My friend and I both have ' + mostPets + ' pets.');
 }
